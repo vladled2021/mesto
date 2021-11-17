@@ -33,7 +33,6 @@ popupCloseButton.addEventListener('click', close);
 
 for (let i = 0; i < elementLike.length; i +=1){
   elementLike[i].addEventListener('click', function() {
-
   elementLike[i].classList.toggle('element__like_selected');
   });
 }
