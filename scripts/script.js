@@ -1,12 +1,12 @@
-let profileEditButton = document.querySelector('.profile__edit-button');// кнопка Edit
-let popup = document.querySelector('.popup');// попап элемент
-let elementLike = document.querySelectorAll('.element__like');// кнопка лайк
-let popupCloseButton = popup.querySelector('.popup__close-button');//кнопка закрытия попап
-let popupContainer = popup.querySelector('.popup__container');// форма попап
-let popupInputName = popup.querySelector('.popup__input_name');// поле name input попапа
-let popupInputJob = popup.querySelector('.popup__input_job');// поле job input попапа
-let profileName = document.querySelector('.profile__name');//элемент имя в dive
-let profileActivity = document.querySelector('.profile__activity');//элемент занятие в dive
+let profileEditButton = document.querySelector('.profile__edit-button');
+let popup = document.querySelector('.popup');
+let elementLike = document.querySelectorAll('.element__like');
+let popupCloseButton = popup.querySelector('.popup__close-button');
+let popupContainer = popup.querySelector('.popup__container');
+let popupInputName = popup.querySelector('.popup__input_name');
+let popupInputJob = popup.querySelector('.popup__input_job');
+let profileName = document.querySelector('.profile__name');
+let profileActivity = document.querySelector('.profile__activity');
 
 function open() {
   popup.classList.add('popup_opened');
@@ -17,16 +17,12 @@ function open() {
 profileEditButton.addEventListener('click', open);
 
 function formSubmitHandler (evt) {
-  evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
-                        // Так мы можем определить свою логику отправки.
-    // Выберите элементы, куда должны быть вставлены значения полей
+  evt.preventDefault();
   profileName.textContent = popupInputName.value;
   profileActivity.textContent = popupInputJob.value;
-    // Вставьте новые значения с помощью textContent
   close()
 }
-// Прикрепляем обработчик к форме:
-// он будет следить за событием “submit” - «отправка»
+
 popupContainer.addEventListener('submit', formSubmitHandler);
 
 function close() {
