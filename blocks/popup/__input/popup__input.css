@@ -11,7 +11,7 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  border-bottom: 1px solid skyblue;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
   background: transparent;
   padding-bottom: 13px;
 }
