@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pages/index.css">
-    <title>Mesto</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Mesto</title>
 </head>
 <body>
   <div class="page">
@@ -14,62 +14,57 @@
     </header>
     <main class="content">
       <section class="profile">
-        <div class="profile__avatar"><img class="profile__image" alt="Аватарка" src="./images/Kusto.jpg"></div>
+        <img class="profile__image" alt="Аватарка" src="./images/Kusto.jpg">
         <div class="profile__info">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <button class="profile__edit-button">
+          <button type="button" aria-label="Редактировать профиль" class="profile__edit-button">
           </button>
           <p class="profile__activity">Исследователь океана</p>
         </div>
-        <button class="profile__add-button">
+        <button type="button" aria-label="Добавить фото" class="profile__add-button">
         </button>
       </section>
       <section class="elements">
         <div class="element">
           <img class="element__image" src="./images/Gatchina.jpg" alt="Гатчина">
           <div class="element__container">
-            <h3 class="element__title">Гатчина</h3>
-            <button type="submit" name="like" value="like" class="element__like"></button>
+            <h2 class="element__title">Гатчина</h2>
+            <button type="button" aria-label="Нравится" class="element__like"></button>
           </div>
-
         </div>
         <div class="element">
           <img class="element__image" src="./images/Elbrus.jpg" alt="Эльбрус">
           <div class="element__container">
-            <h3 class="element__title">Гора Эльбрус</h3>
-            <button type="submit" name="like" value="like" class="element__like"></button>
+            <h2 class="element__title">Гора Эльбрус</h2>
+            <button type="button" aria-label="Нравится" class="element__like"></button>
           </div>
-
         </div>
         <div class="element">
           <img class="element__image" src="./images/Dombai.jpg" alt="Домбай">
           <div class="element__container">
-            <h3 class="element__title">Домбай</h3>
-            <button type="submit" name="like" value="like" class="element__like"></button>
+            <h2 class="element__title">Домбай</h2>
+            <button type="button" aria-label="Нравится" class="element__like"></button>
           </div>
-
         </div>
         <div class="element">
           <img class="element__image" src="./images/Orel.jpg" alt="Орёл">
           <div class="element__container">
-            <h3 class="element__title">Орёл</h3>
-            <button type="submit" name="like" value="like" class="element__like"></button>
+            <h2 class="element__title">Орёл</h2>
+            <button type="button" aria-label="Нравится" class="element__like"></button>
           </div>
-
         </div>
         <div class="element">
           <img class="element__image" src="./images/saint-petersburg.jpg" alt="Санкт-Петербург">
           <div class="element__container">
-            <h3 class="element__title">Санкт-Петербург</h3>
-            <button type="submit" name="like" value="like" class="element__like"></button>
+            <h2 class="element__title">Санкт-Петербург</h2>
+            <button type="button" aria-label="Нравится" class="element__like"></button>
           </div>
-
         </div>
         <div class="element">
           <img class="element__image" src="./images/Karachevsk.jpg" alt="Карачаево-Черкесия">
           <div class="element__container">
-            <h3 class="element__title">Карачаево-Черкесия</h3>
-            <button type="submit" name="like" value="like" class="element__like"></button>
+            <h2 class="element__title">Карачаево-Черкесия</h2>
+            <button type="button" aria-label="Нравится" class="element__like"></button>
           </div>
         </div>
       </section>
@@ -80,12 +75,12 @@
   </div>
   <div class="popup">
     <div class="popup__container">
-        <button type="button" class="popup__close-button">
-        </button>
-        <h2 class="popup__title">Редактировать профиль</h2>
-      <form class="popup__form">
-        <input type="text" name="name" required class="popup__input popup__input_name">
-        <input type="text" name="job" required class="popup__input popup__input_job">
+      <button type="button" aria-label="Закрыть" class="popup__close-button">
+      </button>
+      <h2 class="popup__title">Редактировать профиль</h2>
+      <form class="popup__form" name="form">
+        <input type="text" name="name" required class="popup__input popup__input_type_name">
+        <input type="text" name="job" required class="popup__input popup__input_type_job">
         <button type="submit" class="popup__submit">Сохранить</button>
       </form>
     </div>

@@ -3,8 +3,8 @@
   grid-template-columns: repeat(2, minmax(min-content, max-content));
   grid-template-rows: repeat(2, minmax(min-content, max-content));
   grid-template-areas:
-  'profile__name profile__edit-button'
-  'profile__activity  .';
+    'profile__name profile__edit-button'
+    'profile__activity  .';
   column-gap: 18px;
   row-gap: 9px;
   align-items: end;
@@ -25,4 +25,3 @@
     margin-left: 65px;
   }
 }
-
