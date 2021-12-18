@@ -6,4 +6,5 @@
   font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   background: #000000;
   text-rendering: optimizeLegibility;
+  min-height: 100vh;
 }
